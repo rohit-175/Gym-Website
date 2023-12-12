@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let Me Fit</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <style>
+        body{
+            display: flex;
+            background: url(jim.jpg) center;
+            background-size: cover;
+            color: white;
+            flex-wrap: nowrap;
+        }
+        .left{
+            display: inline-block;
+            
+            position: absolute;
+            left: 20px;
+            top: 0px;
+        }
+        .left img{
+            height: 90px; width: 100px;
+            filter: invert(100%);
+            
+        }
+        .left div{
+            text-align: center;
+            font-family: 'Josefin Sans', sans-serif;
+            padding-top: 0px;
+
+        }
+        .mid{
+            display: block;
+            
+            position: absolute;
+            left: 320px;
+            top: 2px;
+            font-size: 25px;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .right{
+            display: inline-block;
+            
+            position: fixed;
+            right: 20px;
+            top: 20px;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            padding: 3px 25px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+        }
+        .navbar li a:hover, .navbar li a:active{
+            color: gray;
+            text-decoration: underline;
+        }
+        .btn{
+            size: 10px;
+            width: 150px;
+            padding: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: 'Josefin Sans', sans-serif;
+            margin: 5px 2px;
+            border-radius: 10px;
+        }
+        .btn:hover{
+            color: rgb(141, 126, 126);
+        }
+        .container{
+            border: 2px solid rgb(255, 255, 255);
+            margin: 200px 400px;
+            
+            width: 33%;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .formgr input{
+            padding: 2px;
+            margin: 5px 2px;
+            text-align: center;
+            width: 340px;
+            font-size: 22px;
+            border-radius: 10px;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+    </style>
+<body>
+<header>
+    <div class="left">
+        <img src="jim4.png">
+        <div>LET ME FIT</div>
+    </div>
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <button class="btn">Join Now</button>
+        <button class="btn">Contact Us</button>
+    </div>
+</header>
+<div class="container">
+    <h1>Join The Best Gym Now!!!</h1>
+    <form action="">
+        <div class="formgr">
+            <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="formgr">
+            <input type="text" name="" placeholder="Enter your Age">
+        </div>
+        <div class="formgr">
+            <input type="text" name="" placeholder="Enter your Gender">
+        </div>
+        <div class="formgr">
+            <input type="text" name="" placeholder="Enter your desired Program">
+        </div>
+        <div class="formgr">
+            <input type="text" name="" placeholder="Enter your Phone Number">
+        </div>
+        <button class="btn">
+            <div>Submit</div>
+        </button>
+    </form>
+</div>
+</body>
+</html>
